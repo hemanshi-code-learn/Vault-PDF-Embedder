@@ -26,7 +26,7 @@ class VPE_Storage{
 
             $htaccess = $param['path'] . '/.htaccess';
             if ( ! file_exists( $htaccess )){
-                $rules = "<FilesMatch \"\.(pdf)$\">\nRequire all denied\n</FileMatch>";
+                $rules = "<FilesMatch \"\.(pdf)$\">\nRequire all denied\n</FilesMatch>";
                 file_put_contents($htaccess, $rules);
             }
         }

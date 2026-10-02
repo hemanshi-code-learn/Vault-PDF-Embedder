@@ -15,7 +15,7 @@ class VPE_Shortcode{
         }
 
         $this->enqueue_assets();
-        $endpoint_url = admin_url( 'admin-ajax.php?action=vpe_fetch_document&file_id' . $doc_id );
+        $endpoint_url = admin_url( 'admin-ajax.php?action=vpe_fetch_document&file_id=' . $doc_id );
 
         ob_start();
         ?>
