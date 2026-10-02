@@ -22,10 +22,11 @@ class VPE_Loader{
         $storage = new VPE_Storage();
         $access = new VPE_Access();
         $shortcode = new VPE_Shortcode();
-    }
+    
 
     add_filter('wp_handle_upload_prefilter', array($storage, 'filter_pdf_upload'));
     add_action('wp_ajax_vpe_fetch_document', array($access, 'deliver_secure_payload'));
     add_action('wp_ajax_nopriv_vpe_fetch_document', array($access, 'deliver_secure_payload'));
     add_shortcode('vault-pdf', array($shortcode, 'render_shortcode'));
+    }
 }
