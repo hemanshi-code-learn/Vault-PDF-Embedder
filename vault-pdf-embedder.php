@@ -21,6 +21,7 @@ define('VPE_PLUGIN_FILE', __FILE__);
 
 require_once VPE_PLUGIN_DIR . 'includes/class-vpe-loader.php';
 require_once VPE_PLUGIN_DIR . 'includes/class-vpe-storage.php';
+require_once VPE_PLUGIN_DIR . 'includes/class-vpe-access.php';
 
 function run_vault_pdf_embedder(){
     $plugin = VPE_Loader::get_instance();
